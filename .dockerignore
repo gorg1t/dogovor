@@ -1,0 +1,10 @@
+.venv
+.env
+web/node_modules
+web/dist
+rat
+logs
+docs
+tools
+**/__pycache__
+.git

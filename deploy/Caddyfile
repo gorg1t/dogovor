@@ -1,0 +1,16 @@
+# HTTPS автоматически (Let's Encrypt). DOMAIN задаётся в .env на сервере.
+{$DOMAIN} {
+	encode gzip
+	handle /api/* {
+		reverse_proxy api:8010
+	}
+	handle {
+		root * /srv/web
+		try_files {path} /index.html
+		file_server
+	}
+	header {
+		# мини-апп открывается внутри Telegram
+		-X-Frame-Options
+	}
+}

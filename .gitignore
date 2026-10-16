@@ -1,0 +1,39 @@
+# ---- секреты ----
+.env
+*.session
+
+# ---- окружение, сборка, логи ----
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+web/dist/
+*.tsbuildinfo
+logs/
+
+# ---- IDE и системное ----
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+
+# ---- не сервис: презентации, материалы защиты, исследование RAT ----
+docs/
+rat/
+*.pdf
+*.ppt
+*.pptx
+*.doc
+*.docx
+*.key
+*.mp4
+*.MP4
+*.mov
+*.MOV
+
+# ---- скрипты проверок и сценарии (запуск и деплой — tools/run_all.py, tools/deploy.py — остаются) ----
+tools/actors.py
+tools/checks.py
+tools/scenarios/

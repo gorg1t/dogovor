@@ -1,2 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# файлы для Linux-сервера — всегда с LF
+deploy/* text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
